@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 
 public class EditItemActivity extends AppCompatActivity {
@@ -14,20 +15,29 @@ public class EditItemActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_item);
         pos = getIntent().getIntExtra("pos", 0);
-        String inReplyTo = getIntent().getStringExtra("in_reply_to");
-        EditText tvEditItem = (EditText)findViewById(R.id.etEditItem);
-        String content = getIntent().getStringExtra("content");
-        tvEditItem.setText(content);
-        tvEditItem.setSelection(content.length());
-        tvEditItem.requestFocus();
+        EditText etEditTask = (EditText)findViewById(R.id.etEditTask);
+        EditText etEditDue = (EditText)findViewById(R.id.etEditDue);
+        CheckBox chbEditDone = (CheckBox)findViewById(R.id.chbEditDone);
+        String task = getIntent().getStringExtra("task");
+        String due = getIntent().getStringExtra("due");
+        boolean done = getIntent().getBooleanExtra("done", false);
+        etEditTask.setText(task);
+        etEditTask.setSelection(task.length());
+        etEditTask.requestFocus();
+        etEditDue.setText(due);
+        chbEditDone.setChecked(done);
     }
 
     public void onSave(View v) {
-        EditText etEditName = (EditText) findViewById(R.id.etEditItem);
+        EditText etEditTask = (EditText)findViewById(R.id.etEditTask);
+        EditText etEditDue = (EditText)findViewById(R.id.etEditDue);
+        CheckBox chbEditDone = (CheckBox)findViewById(R.id.chbEditDone);
         // Prepare data intent
         Intent data = new Intent();
         // Pass relevant data back as a result
-        data.putExtra("content", etEditName.getText().toString());
+        data.putExtra("task", etEditTask.getText().toString());
+        data.putExtra("due", etEditDue.getText().toString());
+        data.putExtra("done", chbEditDone.isChecked());
         data.putExtra("pos", pos); // ints work too
         // Activity finished ok, return the data
         setResult(RESULT_OK, data); // set result code and bundle data for response

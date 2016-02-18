@@ -12,7 +12,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Edit Item:"
+        android:text="Edit Task:"
         android:id="@+id/tvEditItem"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -23,12 +23,33 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:ems="10"
-        android:id="@+id/etEditItem"
+        android:id="@+id/etEditTask"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/tvEditItem"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Due:"
+        android:id="@+id/tvEditDue"
+        android:layout_below="@+id/etEditTask"
+        android:layout_alignRight="@+id/tvEditItem"
+        android:layout_alignEnd="@+id/tvEditItem" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/etEditDue"
+        android:layout_below="@+id/tvEditDue"
+        android:layout_alignLeft="@+id/tvEditDue"
+        android:layout_alignStart="@+id/tvEditDue"
+        android:layout_alignRight="@+id/etEditTask"
+        android:layout_alignEnd="@+id/etEditTask" />
 
     <Button
         android:layout_width="wrap_content"
@@ -36,7 +57,27 @@
         android:text="Save Item"
         android:id="@+id/btnEditItem"
         android:onClick="onSave"
-        android:layout_below="@+id/etEditItem"
+        android:layout_below="@+id/chbEditDone"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Done:"
+        android:id="@+id/tvEditDone"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/etEditDue"
+         />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:id="@+id/chbEditDone"
+        android:checked="false"
+        android:layout_below="@+id/etEditDue"
+        android:layout_toRightOf="@+id/tvEditDone"
+        android:layout_toEndOf="@+id/tvEditDone" />
 </RelativeLayout>

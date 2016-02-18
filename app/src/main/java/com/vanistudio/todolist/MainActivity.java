@@ -1,13 +1,18 @@
 package com.vanistudio.todolist;
 
+import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.apache.commons.io.FileUtils;
@@ -15,10 +20,11 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
-    ArrayList<String> items;
-    ArrayAdapter<String> itemsAdapter;
+    ArrayList<ListviewRow> items = new ArrayList<ListviewRow>();
+    CustomListViewAdapter itemsAdapter;
     ListView lvItems;
     private final int REQUEST_CODE = 20;
 
@@ -28,24 +34,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         lvItems = (ListView)findViewById(R.id.lvItems);
         readItems();
-        itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+        itemsAdapter = new CustomListViewAdapter(this, items);
         lvItems.setAdapter(itemsAdapter);
         setupListViewListener();
+        EditText etNewTask = (EditText)findViewById(R.id.etNewTask);
+        etNewTask.requestFocus();
     }
 
     public void onAddItem(View v) {
-        EditText etNewItem = (EditText)findViewById(R.id.etNewItem);
-        String itemText = etNewItem.getText().toString();
-        itemsAdapter.add(itemText);
-        etNewItem.setText("");
+        EditText etNewTask = (EditText)findViewById(R.id.etNewTask);
+        String task = etNewTask.getText().toString();
+        EditText etNewDue = (EditText)findViewById(R.id.etNewDue);
+        String due = etNewDue.getText().toString();
+        ListviewRow row = new ListviewRow(task, due, false);
+        itemsAdapter.add(row);
         writeItems();
+        etNewTask.setText("");
+        etNewDue.setText("");
+        etNewTask.requestFocus();
     }
 
     private void setupListViewListener(){
         lvItems.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> adapter, View item, int pos, long id) {
-                items.remove(pos);
+                itemsAdapter.remove(items.get(pos));
                 itemsAdapter.notifyDataSetChanged();
                 writeItems();
                 return true;
@@ -55,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapter, View item, int pos, long id) {
                 Object editItem = lvItems.getItemAtPosition(pos);
-                launchEditView(pos, editItem.toString());
+                launchEditView(pos, (ListviewRow)editItem);
             }
         });
     }
@@ -64,10 +77,22 @@ public class MainActivity extends AppCompatActivity {
         File filesDir = getFilesDir();
         File todoFile = new File(filesDir, "todo.txt");
         try {
-            items = new ArrayList<String>(FileUtils.readLines(todoFile));
+            ArrayList<String> lines = new ArrayList<String>(FileUtils.readLines(todoFile));
+            ListviewRow row;
+            for(String line: lines) {
+                String[] content = line.split(";");
+                if (content[2].equalsIgnoreCase("false")) {
+                    row = new ListviewRow(content[0], content[1], false);
+                }
+                else {
+                    row = new ListviewRow(content[0], content[1], true);
+                }
+
+                items.add(row);
+            }
         }
         catch (IOException e){
-            items = new ArrayList<String>();
+            items = new ArrayList<ListviewRow>();
         }
     }
 
@@ -75,18 +100,24 @@ public class MainActivity extends AppCompatActivity {
         File filesDir = getFilesDir();
         File todoFile = new File(filesDir, "todo.txt");
         try {
-            FileUtils.writeLines(todoFile, items);
+            ArrayList<String> content = new ArrayList<String>();
+            for (ListviewRow row : items) {
+                content.add(row.getTask() + ";" + row.getDue() + ";" + row.getDone());
+            }
+            FileUtils.writeLines(todoFile, content);
         }
         catch (IOException e){
             e.printStackTrace();
         }
     }
 
-    private void launchEditView(int pos, String content) {
+    private void launchEditView(int pos, ListviewRow content) {
         // first parameter is the context, second is the class of the activity to launch
         Intent i = new Intent(MainActivity.this, EditItemActivity.class);
         i.putExtra("pos", pos);
-        i.putExtra("content", content);
+        i.putExtra("task", content.getTask());
+        i.putExtra("due", content.getDue());
+        i.putExtra("done", content.getDone());
         startActivityForResult(i, REQUEST_CODE); // brings up the second activity
     }
 
@@ -95,7 +126,9 @@ public class MainActivity extends AppCompatActivity {
         // REQUEST_CODE is defined above
         if (resultCode == RESULT_OK && requestCode == REQUEST_CODE) {
             // Extract name value from result extras
-            items.set(data.getIntExtra("pos", 0), data.getStringExtra("content"));
+            ListviewRow item;
+            item = new ListviewRow(data.getStringExtra("task"), data.getStringExtra("due"), data.getBooleanExtra("done", false));
+            items.set(data.getIntExtra("pos", 0), item);
             itemsAdapter.notifyDataSetChanged();
             writeItems();
         }
