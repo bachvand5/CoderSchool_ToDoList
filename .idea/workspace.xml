@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AndroidLayouts">
     <shared>
       <config />
@@ -38,55 +41,10 @@
     <leaf>
       <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-              <folding>
-                <element signature="e#272#305#0" expanded="true" />
-                <element signature="e#330#365#0" expanded="true" />
-                <element signature="e#391#426#0" expanded="true" />
-                <element signature="e#450#483#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61035424">
-              <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditItemActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/EditItemActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="34" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="34" />
+            <state vertical-scroll-proportion="-6.448276">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activity_edit_item.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_item.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="16.672413">
-              <caret line="9" column="48" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="48" />
-              <folding>
-                <element signature="e#272#305#0" expanded="true" />
-                <element signature="e#330#365#0" expanded="true" />
-                <element signature="e#391#426#0" expanded="true" />
-                <element signature="e#450#483#0" expanded="true" />
-              </folding>
             </state>
           </provider>
           <provider editor-type-id="android-designer">
@@ -94,41 +52,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListviewRow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/ListviewRow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-              <folding>
-                <element signature="e#498#499#0" expanded="true" />
-                <element signature="e#529#530#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CustomListViewAdapter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/CustomListViewAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="listview_row.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_row.xml">
-          <provider editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
-              <folding />
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5067751">
+              <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -137,8 +79,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -1702,10 +1644,12 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/listview_row.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/EditItemActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/CustomListViewAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/dialog_new_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_new_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/NewItemFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/CustomListViewAdapter.java" />
       </list>
     </option>
   </component>
@@ -1761,28 +1705,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoderSchool_ToDoList" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderTypeNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -1814,16 +1736,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="todolist" />
               <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CoderSchool_ToDoList" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -2021,14 +1933,14 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32367972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32367972" sideWeight="0.4969743" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39863715" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32367972" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879046" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -2037,7 +1949,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3270869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3492334" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -2051,11 +1963,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32367972" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17170954" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270869" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2074,8 +1986,8 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977462" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
@@ -2101,15 +2013,198 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="44" selection-start-line="58" selection-start-column="44" selection-end-line="58" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/NewItemFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="29" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3162#3532#0" expanded="true" />
+            <element signature="e#3531#3532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_new_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="36" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="48" selection-start-line="59" selection-start-column="48" selection-end-line="59" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/EditItemActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/ListviewRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding>
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#529#530#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/CustomListViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_row.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/EditItemActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="34" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="48" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/ListviewRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding>
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#529#530#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/CustomListViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_row.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding>
-            <element signature="e#272#305#0" expanded="true" />
-            <element signature="e#330#365#0" expanded="true" />
-            <element signature="e#391#426#0" expanded="true" />
-            <element signature="e#450#483#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2131,8 +2226,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
           <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#529#530#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2142,7 +2237,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="40" column="43" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2151,12 +2246,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding>
-            <element signature="e#272#305#0" expanded="true" />
-            <element signature="e#330#365#0" expanded="true" />
-            <element signature="e#391#426#0" expanded="true" />
-            <element signature="e#450#483#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2178,7 +2268,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2187,12 +2277,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding>
-            <element signature="e#272#305#0" expanded="true" />
-            <element signature="e#330#365#0" expanded="true" />
-            <element signature="e#391#426#0" expanded="true" />
-            <element signature="e#450#483#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2213,12 +2298,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="25" column="47" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-          <folding>
-            <element signature="e#272#305#0" expanded="true" />
-            <element signature="e#330#365#0" expanded="true" />
-            <element signature="e#391#426#0" expanded="true" />
-            <element signature="e#450#483#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2240,8 +2320,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#529#530#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2261,12 +2341,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-          <folding>
-            <element signature="e#272#305#0" expanded="true" />
-            <element signature="e#330#365#0" expanded="true" />
-            <element signature="e#391#426#0" expanded="true" />
-            <element signature="e#450#483#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -2288,8 +2363,8 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#529#530#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -2315,17 +2390,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/ListviewRow.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
-          <folding>
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/listview_row.xml">
       <provider editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -2337,45 +2401,14 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/CustomListViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="32" column="65" selection-start-line="32" selection-start-column="65" selection-end-line="32" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_edit_item.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="16.672413">
-          <caret line="9" column="48" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="48" />
-          <folding>
-            <element signature="e#272#305#0" expanded="true" />
-            <element signature="e#330#365#0" expanded="true" />
-            <element signature="e#391#426#0" expanded="true" />
-            <element signature="e#450#483#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="-2.45">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
       <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="e#272#305#0" expanded="true" />
-            <element signature="e#330#365#0" expanded="true" />
-            <element signature="e#391#426#0" expanded="true" />
-            <element signature="e#450#483#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
         <state />
       </provider>
     </entry>
@@ -2387,10 +2420,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/ListviewRow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0135502">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding>
+            <element signature="e#498#499#0" expanded="false" />
+            <element signature="e#529#530#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/sdk/extras/android/m2repository/com/android/support/appcompat-v7/23.1.1/appcompat-v7-23.1.1-sources.jar!/android/support/v7/app/AppCompatViewInflater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33333334">
+          <caret line="265" column="0" selection-start-line="265" selection-start-column="0" selection-end-line="265" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/NewItemFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8157182">
+          <caret line="94" column="44" selection-start-line="94" selection-start-column="44" selection-end-line="94" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3162#3532#0" expanded="true" />
+            <element signature="e#3531#3532#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_new_item.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.448276">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/CustomListViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="80" selection-start-line="31" selection-start-column="80" selection-end-line="31" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/vanistudio/todolist/MainActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61035424">
-          <caret line="50" column="21" selection-start-line="50" selection-start-column="21" selection-end-line="50" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.5067751">
+          <caret line="71" column="11" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,6 +1,8 @@
 package com.vanistudio.todolist;
 
 import android.app.Dialog;
+import android.app.FragmentManager;
+import android.app.FragmentTransaction;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -22,11 +24,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity extends AppCompatActivity {
+import com.vanistudio.todolist.NewItemFragment.NewItemFragmentListener;
+
+public class MainActivity extends AppCompatActivity implements NewItemFragmentListener {
     ArrayList<ListviewRow> items = new ArrayList<ListviewRow>();
     CustomListViewAdapter itemsAdapter;
     ListView lvItems;
     private final int REQUEST_CODE = 20;
+    String fragmentStringReturn = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,12 +42,10 @@ public class MainActivity extends AppCompatActivity {
         itemsAdapter = new CustomListViewAdapter(this, items);
         lvItems.setAdapter(itemsAdapter);
         setupListViewListener();
-        EditText etNewTask = (EditText)findViewById(R.id.etNewTask);
-        etNewTask.requestFocus();
     }
 
     public void onAddItem(View v) {
-        EditText etNewTask = (EditText)findViewById(R.id.etNewTask);
+       /* EditText etNewTask = (EditText)findViewById(R.id.etNewTask);
         String task = etNewTask.getText().toString();
         EditText etNewDue = (EditText)findViewById(R.id.etNewDue);
         String due = etNewDue.getText().toString();
@@ -51,7 +54,10 @@ public class MainActivity extends AppCompatActivity {
         writeItems();
         etNewTask.setText("");
         etNewDue.setText("");
-        etNewTask.requestFocus();
+        etNewTask.requestFocus();*/
+        FragmentManager fragmentManager = getFragmentManager();
+        NewItemFragment fNewItem = new NewItemFragment();
+        fNewItem.show(fragmentManager, "Add New Item");
     }
 
     private void setupListViewListener(){
@@ -68,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapter, View item, int pos, long id) {
                 Object editItem = lvItems.getItemAtPosition(pos);
-                launchEditView(pos, (ListviewRow)editItem);
+                launchEditView(pos, (ListviewRow) editItem);
             }
         });
     }
@@ -132,5 +138,13 @@ public class MainActivity extends AppCompatActivity {
             itemsAdapter.notifyDataSetChanged();
             writeItems();
         }
+    }
+
+    public void updateResult(String inputText) {
+        fragmentStringReturn = inputText;
+        String[] content = fragmentStringReturn.split(";");
+        ListviewRow row = new ListviewRow(content[0], content[1], false);
+        itemsAdapter.add(row);
+        writeItems();
     }
 }

@@ -26,7 +26,7 @@ public class CustomListViewAdapter extends ArrayAdapter<ListviewRow> {
     }
 
     @Override
-    public View getView(int position, View convertView, ViewGroup parent) {
+    public View getView(int position, View convertView, final ViewGroup parent) {
         // Get the data item for this position
         ListviewRow task = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
